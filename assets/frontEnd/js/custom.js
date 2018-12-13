@@ -584,7 +584,7 @@ Project: NightClub
 			}), scrollDuration);
 			
 			//offer section
-			controller.addTween('.nc_club_slider', TweenMax.from($('.offers_box_wrapper'), 1, {
+			controller.addTween('.nc_club_slider', TweenMax.from($('._offers_box_wrapper'), 1, {
 				x: -200, opacity: 0, scale: 0.5, ease: Sine.easeInOut
 			}), scrollDuration);
 			controller.addTween('.nc_club_slider', TweenMax.to($('.offers_box_wrapper'), 1, {
