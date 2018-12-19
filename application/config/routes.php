@@ -32,3 +32,8 @@ $route['gallery'] = 'FrontEndController/gallery_page';
 
 $route['contact_us'] = 'FrontEndController/contact_us_page';
 $route['member_account'] = 'FrontEndController/member_account_page';
+
+
+
+/*============= Admin Route List ==================*/
+$route['admin/login_page'] = 'LoginController/index';

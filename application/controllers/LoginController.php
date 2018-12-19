@@ -10,4 +10,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class LoginController extends MY_Controller
 {
 
+
+	public function index()
+	{
+		$this->load->model('Admin_model');
+		if ($this->Admin_model->is_admin_loged_in())
+		{
+			redirect('Admindashboard');
+		}
+		else{
+			$this->load->view('admin/login_page');
+		}
+	}
 }
